@@ -1,0 +1,9 @@
+@import "__title/intro__title.css";
+@import "__subtitle/intro__subtitle.css";
+@import "__content-row/intro__content-row.css";
+@import "__text/intro__text.css";
+
+.intro {
+    max-width: 984px;
+    margin: 80px 148px 0;
+}

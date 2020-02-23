@@ -1,0 +1,10 @@
+.intro__text {
+    color: #FFFFFF;
+
+    font-family: Inter;
+
+}
+
+.intro__text:nth-child(2) {
+    margin-left: 18px;
+}
