@@ -1,0 +1,11 @@
+@import "__item/photo-grid__item.css";
+
+.photo-grid {
+    margin: 92px auto 0;
+    max-width: 1184px;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+}

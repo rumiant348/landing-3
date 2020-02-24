@@ -1,0 +1,13 @@
+@import "__image/places__image.css";
+@import "__item/places__item.css";
+@import "__paragraph/places__paragraph.css";
+@import "__title/places__title.css";
+@import "__url/places__url.css";
+@import "__url-heading/places__url-heading.css";
+@import "__website/places__website.css";
+@import "__text/places__text.css";
+
+.places {
+    margin: 0 auto;
+    max-width: 984px;
+}

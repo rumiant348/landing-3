@@ -1,0 +1,12 @@
+@import "__item/video__item.css";
+@import "__title/video__title.css";
+@import "__subtitle/video__subtitle.css";
+@import "__container/video__container.css";
+@import "__content-subtitle/video__content-subtitle.css";
+@import "__content-title/video__content-title.css";
+@import "__duration/video__duration.css";
+@import "__icon/video__icon.css";
+
+.video {
+
+}

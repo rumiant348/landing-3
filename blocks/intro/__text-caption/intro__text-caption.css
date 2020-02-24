@@ -1,0 +1,5 @@
+.intro__text-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

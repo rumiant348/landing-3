@@ -1,7 +1,13 @@
-@import url("../vendor/normalize.css");
-@import url("../blocks/header/header.css");
-@import url("../blocks/lead/lead.css");
-@import url("../blocks/intro/intro.css");
+@import "../vendor/normalize.css";
+@import "../blocks/header/header.css";
+@import "../blocks/content/content.css";
+@import "../blocks/lead/lead.css";
+@import "../blocks/intro/intro.css";
+@import "../blocks/photo-grid/photo-grid.css";
+
+@import "../blocks/places/places.css";
+
+
 
 @font-face {
     font-family: "Inter";
@@ -23,18 +29,8 @@
 .page {
     margin: 0 auto;
     background-color: #2A2C2F;
-
-    max-width: 1440px;
-
-
-    /*min-width: 1100px;*/
-    /* мы ещё не умеем делать мобильную версию сайта, */
-    /* поэтому выше установлена минимальная ширина страницы */
-    /*max-width: 1600px;*/
-    /* выше установили ограничение по максимальной ширине */
-    /*margin: 0 auto;*/
-    /* выше для экранов больше 1600px отцентрировали весь контент */
-    /*font-family: 'Helvetica Neue', Arial, sans-serif;*/
+    background-size: 100%;
+    max-width: 100%;
 
     align-content: center;
     display: flex;

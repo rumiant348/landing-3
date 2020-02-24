@@ -2,8 +2,18 @@
 @import "__subtitle/intro__subtitle.css";
 @import "__content-row/intro__content-row.css";
 @import "__text/intro__text.css";
+@import "__text-line/intro__text-line.css";
+@import "__text-bold/intro__text-bold.css";
+@import "__content/intro__content.css";
+@import "__text-caption/intro__text-caption.css";
+@import "__statistics/intro__statistics.css";
+@import "__statistics-line/intro__statistics-line.css";
 
 .intro {
     max-width: 984px;
-    margin: 80px 148px 0;
+    margin: 80px auto 0;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
 }
