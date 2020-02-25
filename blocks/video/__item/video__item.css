@@ -1,3 +1,9 @@
-.video__item.css {
-
+.video__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: end;
+    max-width: 583px;
+    padding: 30px;
+    position: absolute;
 }

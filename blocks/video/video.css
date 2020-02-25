@@ -6,7 +6,12 @@
 @import "__content-title/video__content-title.css";
 @import "__duration/video__duration.css";
 @import "__icon/video__icon.css";
+@import "__link/video__link.css";
+@import "__item-bg/video__item-bg.css";
+@import "__image/video__image.css";
+@import "__text/video__text.css";
 
 .video {
-
+    margin: 102px auto 0;
+    max-width: 1184px;
 }

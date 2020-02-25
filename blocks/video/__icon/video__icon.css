@@ -1,3 +1,7 @@
 .video__icon {
-
+    align-self: flex-start;
+    z-index: 2;
+    width: 41px;
+    height: 41px;
+    margin: 0;
 }
