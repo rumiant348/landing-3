@@ -1,6 +1,18 @@
 .video__image {
     height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+
+    opacity: 0.8;
+    background: #000000;
+
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.video__image:hover {
+    opacity: 0.5;
 }
