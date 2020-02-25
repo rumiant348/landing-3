@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-content: end;
-    max-width: 583px;
+    width: 510px;
     padding: 30px;
     position: relative;
 }
