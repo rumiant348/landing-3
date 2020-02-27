@@ -10,6 +10,8 @@
 @import "../blocks/places/places.css";
 @import "../blocks/comments/comments.css";
 
+@import "../blocks/emblem/emblem.css";
+
 
 @font-face {
     font-family: "Inter";
