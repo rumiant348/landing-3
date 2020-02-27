@@ -1,0 +1,13 @@
+@import "__content-title/additional__content-title.css";
+@import "__content-subtitle/additional__content-subtitle.css";
+@import "__container/additional__container.css";
+@import "__item/additional__item.css";
+@import "__title/additional__title.css";
+@import "__text/additional__text.css";
+@import "__img-bg/additional__img-bg.css";
+@import "__content/additional__content.css";
+
+.additional {
+    max-width: 1184px;
+    margin: 102px auto 0;
+}
