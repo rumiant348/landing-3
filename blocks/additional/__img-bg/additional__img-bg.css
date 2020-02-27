@@ -8,14 +8,6 @@
     left: 0;
 
     background: #000000;
-    opacity: 0.6;
-    transition-property: opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
 
     border-radius: 10px;
-}
-
-.additional__img-bg:hover {
-    opacity: 0.2;
 }

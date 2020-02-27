@@ -1,4 +1,9 @@
 .additional__content {
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 18px;
 }
