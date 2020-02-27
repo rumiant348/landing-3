@@ -1,0 +1,13 @@
+@import "__container/comments__container.css";
+@import "__author/comments__author.css";
+@import "__comment/comments__comment.css";
+@import "__content-subtitle/comments__content-subtitle.css";
+@import "__content-title/comments__content-title.css";
+@import "__image/comments__image.css";
+@import "__quote/comments__quote.css";
+
+
+.comments {
+    max-width: 1184px;
+    margin: 102px auto 0;
+}

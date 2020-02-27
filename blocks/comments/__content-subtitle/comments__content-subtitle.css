@@ -1,0 +1,13 @@
+.comments__content-subtitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    max-width: 640px;
+    margin: 48px auto 66px;
+}
