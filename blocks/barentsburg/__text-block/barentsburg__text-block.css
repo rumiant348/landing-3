@@ -1,0 +1,6 @@
+.barentsburg__text-block {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: start;
+}
