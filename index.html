@@ -10,11 +10,11 @@
 <div class="page">
     <header class="header">
         <a href="#">
-            <div class="header__logo"></div>
+            <div class="header__logo transition__fade"></div>
         </a>
         <div class="header__lang-container">
-            <a href="#" class="header__lang header__lang_active">Ru</a>
-            <a href="#" class="header__lang">En</a>
+            <a href="#" class="header__lang transition__fade">Ru</a>
+            <a href="#" class="header__lang header__lang_inactive transition__fade">En</a>
         </div>
     </header>
     <main class="content">
@@ -76,7 +76,7 @@
                 <h2 class="places__title">Куршская коса</h2>
                 <div class="places__website">
                     <p class="places__url-heading">url</p>
-                    <a href="http://park-kosa.ru/" class="places__url">park-kosa.ru</a>
+                    <a href="http://park-kosa.ru/" class="places__url transition__fade">park-kosa.ru</a>
                 </div>
                 <img class="places__image" src="images/kosa.jpg" alt="фотография косы">
                 <div class="places__text">
@@ -96,7 +96,7 @@
                 <h2 class="places__title">Кольский</h2>
                 <div class="places__website">
                     <p class="places__url-heading">url</p>
-                    <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="places__url">National
+                    <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="places__url transition__fade">National
                         Geographic</a>
                 </div>
                 <img class="places__image" src="images/kolsky.jpg" alt="фото кольской тундры">
@@ -118,7 +118,7 @@
                 <h2 class="places__title">Алтай</h2>
                 <div class="places__website">
                     <p class="places__url-heading">url</p>
-                    <a href="https://www.facebook.com/altairegion22/" class="places__url">Facebook</a>
+                    <a href="https://www.facebook.com/altairegion22/" class="places__url transition__fade">Facebook</a>
                 </div>
                 <img class="places__image" src="images/altai.jpg" alt="фотография алтайского леса">
                 <div class="places__text">
@@ -138,7 +138,7 @@
                 <h2 class="places__title">Зимний Байкал</h2>
                 <div class="places__website">
                     <p class="places__url-heading">url</p>
-                    <a href="https://vk.com/baikalmile" class="places__url">https://vk.com/baikalmile</a>
+                    <a href="https://vk.com/baikalmile" class="places__url transition__fade">https://vk.com/baikalmile</a>
                 </div>
                 <img class="places__image" src="images/winter-baikal.jpg" alt="фотография байкальского льда">
                 <div class="places__text">
@@ -158,7 +158,7 @@
                 <h2 class="places__title">Карелия</h2>
                 <div class="places__website">
                     <p class="places__url-heading">url</p>
-                    <a href="https://voldozero.ru" class="places__url">https://voldozero.ru</a>
+                    <a href="https://voldozero.ru" class="places__url transition__fade">https://voldozero.ru</a>
                 </div>
                 <img class="places__image" src="images/karelia.jpg" alt="фотография озера в карелии">
                 <div class="places__text">
@@ -178,7 +178,7 @@
             <h3 class="video__content-subtitle">Видео от студии Stereotactic о местах в России, где ведутся
                 фундаментальные исследования</h3>
             <div class="video__container">
-                <a class="video__link video__link_kamchatcka" target="_blank" href="https://vimeo.com/81106671">
+                <a class="video__link video__link_kamchatcka" target="_blank" href="https://vimeo.com/81106671 transition__fade">
                     <img src="images/icon_play.svg" alt="кнопка проигрывания видео" class="video__icon_play">
                     <div class="video__text">
                         <div class="video__item-bg"></div>
@@ -187,7 +187,7 @@
                         <p class="video__subtitle">Director: Pavel Karykhalin</p>
                     </div>
                 </a>
-                <a class="video__link video__link_observatory" target="_blank" href="https://vimeo.com/290675450">
+                <a class="video__link video__link_observatory" target="_blank" href="https://vimeo.com/290675450 transition__fade">
                     <div class="video__item-bg"></div>
                     <img src="images/icon_play.svg" alt="кнопка проигрывания видео" class="video__icon_play">
                     <div class="video__text">
@@ -277,14 +277,13 @@
             </div>
         </section>
         <section class="cover">
-            <div class="cover__overlay">
+            <div class="cover__overlay"></div>
+            <a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover__link transition__fade" target="_blank">
                 <img class="cover__image" src="images/cover.jpg" alt="фото вокзала">
-                <div class="cover__text">
-                    <h2 class="cover__title">До Байкала &laquo;на собаках&raquo;</h2>
-                    <p class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes — путешествие от столицы до
-                        Байкала на электричках.https://stampsy.com/na-elektrichkakh-do-baikala</p>
-                </div>
-            </div>
+                <h2 class="cover__title">До Байкала &laquo;на собаках&raquo;</h2>
+                <p class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes — путешествие от столицы до
+                    Байкала на электричках.</p>
+            </a>
         </section>
         <section class="emblem">
             <h3 class="emblem__title">Природа на гербах российских городов</h3>
@@ -321,7 +320,7 @@
                 <div class="barentsburg__website">
                     <p class="barentsburg__url-heading">url</p>
                     <a href="https://meduza.io/feature/2016/03/02/umeret-ili-roditsya-zdes-prakticheski-nevozmozhno"
-                       class="barentsburg__url">Умереть или родиться здесь практически невозможно</a>
+                       class="barentsburg__url transition__fade">Умереть или родиться здесь практически невозможно</a>
                 </div>
             </div>
         </section>
@@ -329,11 +328,11 @@
     <footer class="footer">
         <div class="footer__navigation-block">
             <a href="https://yandex.ru/maps/213/moscow/?ll=37.622504%2C55.753215&z=10" target="_blank"
-               class="footer__link">Карты</a>
-            <a href="https://yandex.ru/pogoda/moscow" target="_blank" class="footer__link">Погода</a>
-            <a href="https://rasp.yandex.ru/" target="_blank" class="footer__link">Расписание</a>
-            <a href="https://calendar.yandex.ru/week?uid=497434302" target="_blank" class="footer__link">Календарь</a>
-            <a href="https://travel.yandex.ru/" target="_blank" class="footer__link">Путешествия</a>
+               class="footer__link transition__fade">Карты</a>
+            <a href="https://yandex.ru/pogoda/moscow" target="_blank" class="footer__link transition__fade">Погода</a>
+            <a href="https://rasp.yandex.ru/" target="_blank" class="footer__link transition__fade">Расписание</a>
+            <a href="https://calendar.yandex.ru/week?uid=497434302" target="_blank" class="footer__link transition__fade">Календарь</a>
+            <a href="https://travel.yandex.ru/" target="_blank" class="footer__link transition__fade">Путешествия</a>
         </div>
         <p class="footer__copyright">&copy; 2019 Антон</p>
     </footer>

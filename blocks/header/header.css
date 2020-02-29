@@ -1,6 +1,6 @@
-@import url('./__lang/header__lang.css');
-@import url('./__lang-container/header__lang-container.css');
-@import url('./__logo/header__logo.css');
+@import "./__lang/header__lang.css";
+@import "./__lang-container/header__lang-container.css";
+@import "./__logo/header__logo.css";
 
 .header {
     margin: 30px auto 0;
@@ -8,4 +8,5 @@
 
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }

@@ -2,9 +2,15 @@
 @import "__title/cover__title.css";
 @import "__subtitle/cover__subtitle.css";
 @import "__overlay/cover__overlay.css";
-@import "__text/cover__text.css";
+@import "__link/cover__link.css";
+
 
 .cover {
     max-width: 1184px;
     margin: 102px auto 0;
+    position: relative;
+}
+
+.cover:hover .cover__overlay {
+    opacity: 0.1;
 }

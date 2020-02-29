@@ -6,5 +6,6 @@
     top: 0;
     left: 0;
     background: #000000;
-    border-radius: 10px;
+    opacity: 0.5;
+    border-radius: 5px;
 }

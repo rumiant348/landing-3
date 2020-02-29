@@ -1,0 +1,11 @@
+.transition__fade {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+.transition__fade:hover {
+    opacity: .4;
+}
