@@ -1,0 +1,11 @@
+@import "__link/footer__link.css";
+@import "__copyright/footer__copyright.css";
+
+.footer {
+    max-width: 1184px;
+    margin: 0 48px 48px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
