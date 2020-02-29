@@ -1,3 +1,22 @@
+@import "_observatory/video__link_observatory.css";
+@import "_kamchatcka/video__link_kamchatcka.css";
+
 .video__link {
     text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: end;
+    z-index: 0;
+    width: 583px;
+    height: 323px;
+    background-size: cover;
+    border-radius: 10px;
 }
+
+.video__link:hover .video__item-bg {
+    opacity: 0.8;
+}
+
+

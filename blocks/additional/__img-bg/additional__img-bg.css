@@ -1,13 +1,10 @@
 .additional__img-bg {
     z-index: 1;
-
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-
     background: #000000;
-
     border-radius: 10px;
 }

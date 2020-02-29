@@ -1,9 +1,0 @@
-.video__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-content: end;
-    width: 510px;
-    padding: 30px;
-    position: relative;
-}

@@ -1,4 +1,3 @@
-@import "__item/video__item.css";
 @import "__title/video__title.css";
 @import "__subtitle/video__subtitle.css";
 @import "__container/video__container.css";
@@ -8,8 +7,8 @@
 @import "__icon/video__icon.css";
 @import "__link/video__link.css";
 @import "__item-bg/video__item-bg.css";
-@import "__image/video__image.css";
 @import "__text/video__text.css";
+
 
 .video {
     margin: 102px auto 0;
