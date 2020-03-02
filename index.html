@@ -154,7 +154,8 @@
                 <h2 class="places__title">Алтай</h2>
                 <div class="places__website">
                     <p class="places__url-heading">url</p>
-                    <a href="https://www.facebook.com/altairegion22/" class="places__url transition-fade" target="_blank">Facebook</a>
+                    <a href="https://www.facebook.com/altairegion22/" class="places__url transition-fade"
+                       target="_blank">Facebook</a>
                 </div>
                 <img class="places__image" src="images/altai.jpg" alt="фотография алтайского леса">
                 <div class="places__text">
@@ -218,7 +219,8 @@
             <div class="video__container">
                 <a class="video__link video__link_kamchatcka" target="_blank" href="https://vimeo.com/81106671">
                     <!-- Отлично! Фоновое изображение вставлено с помощью css и модификатора -->
-                    <img src="images/icon_play.svg" alt="кнопка проигрывания видео" class="video__icon video__icon_play">
+                    <img src="images/icon_play.svg" alt="кнопка проигрывания видео"
+                         class="video__icon video__icon_play">
                     <!--Надо исправить: БЭМ сущность содержит в себе только модификатор.
                     Класс представлен одним модификатором, образованным от элемента.
                     Пример работы с модификаторами: class='block block_mod block_mod_mod-value',
@@ -257,37 +259,29 @@
             <p class="additional__content-subtitle">места, рекомендованныме нашими фотографами</p>
             <div class="additional__container">
                 <div class="additional__item">
-                    <div class="additional__content">
-                        <!-- Надо исправить: Этот элемент - лишняя обертка. Ее можно удалить без вреда для верстки. Старайтесь избегать лишних элементов в разметке. -->
-                        <h3 class="additional__title">Новороссийская бухта</h3>
-                        <p class="additional__text">Главный торговый порт не курорт, но море здесь лазурное, и толпы
-                            кораблей на рейде. Залюбуешься.</p>
-                    </div>
+                    <!-- ++ Надо исправить: Этот элемент - лишняя обертка. Ее можно удалить без вреда для верстки. Старайтесь избегать лишних элементов в разметке. -->
+                    <h3 class="additional__title">Новороссийская бухта</h3>
+                    <p class="additional__text">Главный торговый порт не курорт, но море здесь лазурное, и толпы
+                        кораблей на рейде. Залюбуешься.</p>
                     <img src="images/nvrssk.jpg" alt="Новороссийск" class="additional__img-bg">
                     <!-- Можно лучше: задайте фоновое изображение с помощью модификатора у родительского блока и background-image css -->
                 </div>
                 <div class="additional__item">
-                    <div class="additional__content">
-                        <h3 class="additional__title">Аракульский шихан</h3>
-                        <p class="additional__text">Даже для Южного Урала, где красиво везде, это пейзаж выдающийся. И
-                            там отсутствует несносная мошкá.</p>
-                    </div>
+                    <h3 class="additional__title">Аракульский шихан</h3>
+                    <p class="additional__text">Даже для Южного Урала, где красиво везде, это пейзаж выдающийся. И
+                        там отсутствует несносная мошкá.</p>
                     <img src="images/shickan.jpg" alt="Аракульские горы" class="additional__img-bg">
                 </div>
                 <div class="additional__item">
-                    <div class="additional__content">
-                        <h3 class="additional__title">Череповец</h3>
-                        <p class="additional__text">Громадный металлургический комбинат на водном пути с Волги в
-                            Балтийское море. В нём есть своя красота.</p>
-                    </div>
+                    <h3 class="additional__title">Череповец</h3>
+                    <p class="additional__text">Громадный металлургический комбинат на водном пути с Волги в
+                        Балтийское море. В нём есть своя красота.</p>
                     <img src="images/cherepovets.jpg" alt="Череповец-Череповец" class="additional__img-bg">
                 </div>
                 <div class="additional__item">
-                    <div class="additional__content">
-                        <h3 class="additional__title">Никола-Ленивец</h3>
-                        <p class="additional__text">Оцените ответ современных художников идолам капища, которое было тут
-                            при древнем поселении на реке Угра.</p>
-                    </div>
+                    <h3 class="additional__title">Никола-Ленивец</h3>
+                    <p class="additional__text">Оцените ответ современных художников идолам капища, которое было тут
+                        при древнем поселении на реке Угра.</p>
                     <img src="images/nikola.jpg" alt="Nikola-Lenivets" class="additional__img-bg">
                 </div>
             </div>
@@ -372,7 +366,7 @@
         </section>
         <section class="barentsburg">
             <h2 class="barentsburg__title">Баренцбург</h2>
-            <h3 class="barentsburg__coord">78.0648&deg; с.ш. 14.2335&deg; в.д.</h3>
+            <p class="barentsburg__coord">78.0648&deg; с.ш. 14.2335&deg; в.д.</p>
             <!-- Можно лучше: используйте для подзаголовков параграфы -->
 
             <img src="images/map.jpg" alt="карта Баренцбурга" class="barentsburg__map">
@@ -388,16 +382,18 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__navigation-block">
-            <a href="https://yandex.ru/maps/213/moscow/?ll=37.622504%2C55.753215&z=10" target="_blank"
-               class="footer__link transition-fade">Карты</a>
-            <a href="https://yandex.ru/pogoda/moscow" target="_blank" class="footer__link transition-fade">Погода</a>
-            <a href="https://rasp.yandex.ru/" target="_blank" class="footer__link transition-fade">Расписание</a>
-            <a href="https://calendar.yandex.ru/week?uid=497434302" target="_blank"
-               class="footer__link transition-fade">Календарь</a>
-            <a href="https://travel.yandex.ru/" target="_blank" class="footer__link transition-fade">Путешествия</a>
-        </div>
-        <!-- Надо исправить: по смыслу эти ссылки - навигация. Оберните их в список <nav>. используйте список nav > ul > li > a -->
+        <nav class="footer__navigation-block">
+            <ul >
+            <li><a href="https://yandex.ru/maps/213/moscow/?ll=37.622504%2C55.753215&z=10" target="_blank"
+                   class="footer__link transition-fade">Карты</a></li>
+            <li><a href="https://yandex.ru/pogoda/moscow" target="_blank" class="footer__link transition-fade">Погода</a></li>
+            <li><a href="https://rasp.yandex.ru/" target="_blank" class="footer__link transition-fade">Расписание</a></li>
+            <li><a href="https://calendar.yandex.ru/week?uid=497434302" target="_blank"
+                   class="footer__link transition-fade">Календарь</a></li>
+            <li><a href="https://travel.yandex.ru/" target="_blank" class="footer__link transition-fade">Путешествия</a></li>
+            </ul>
+        </nav>
+        <!-- ++ Надо исправить: по смыслу эти ссылки - навигация. Оберните их в список <nav>. используйте список nav > ul > li > a -->
 
         <p class="footer__copyright">&copy; 2019 Антон</p>
         <!-- Отлично! Для копирайта вы используете html мнемоники -->

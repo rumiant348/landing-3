@@ -1,5 +1,11 @@
 .additional__item {
     position: relative;
-    width: 284px;
+    max-width: 284px;
     height: 330px;
+
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 18px;
 }
