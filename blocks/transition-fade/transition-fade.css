@@ -1,4 +1,4 @@
-.transition__fade {
+.transition-fade {
     opacity: 1;
     transition-property: opacity;
     transition-duration: 2s;
@@ -6,6 +6,6 @@
     transition-delay: 0s;
 }
 
-.transition__fade:hover {
+.transition-fade:hover {
     opacity: .4;
 }

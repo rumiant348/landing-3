@@ -1,5 +1,4 @@
-@import "../vendor/normalize.css";
-@import "../blocks/transition/__fade/transition__fade.css";
+@import "../blocks/transition-fade/transition-fade.css";
 @import "../blocks/header/header.css";
 @import "../blocks/content/content.css";
 @import "../blocks/lead/lead.css";

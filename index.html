@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- +++ Можно лучше: подключите normalize перед подключением стилей в head -->
+    <!-- Он был заимпорчен первым в стилях Но отдельно лучше, то лады)    -->
+    <link rel="stylesheet" href="./vendor/normalize.css">
     <link rel="stylesheet" href="./pages/index.css">
     <title>Путешествия по России</title>
 </head>
@@ -10,24 +13,54 @@
 <div class="page">
     <header class="header">
         <a href="#">
-            <div class="header__logo transition__fade"></div>
+            <img class="header__logo transition-fade" src="images/logo.svg" alt="логотип с картой России">
+            <!--  +++  Надо исправить:
+                 +++  загрузите логотип тегом img
+                 +++ - transition__fade не может использоваться вне блока transition
+                 теперь это блок transition-fade Я миксин пытался сделать им Чтобы переиспользовать транзишн для ссылок))
+             -->
         </a>
         <div class="header__lang-container">
-            <a href="#" class="header__lang transition__fade">Ru</a>
-            <a href="#" class="header__lang header__lang_inactive transition__fade">En</a>
+            <a href="#" class="header__lang transition-fade header__lang_active ">Ru</a>
+            <a href="#" class="header__lang transition-fade">En</a>
+            <!-- ++ Надо исправить:
+       здорово, что вы используете модификатор в переключении языка! при этом, нужно немного исправить его работу.
+       во-первых, перенесите модификатор на русский язык, так как _selected у нас именно русский
+       во-вторых, в стилях модификаторв добавьте подчеркивание текста и никаких других стилей у него быть не должно
+       в-третьих, у header__lang добавьте стиль     text-decoration: none;
+
+       Это контентные данные и завтра на странице может быть, например, 5 языков.
+       Чтобы не добавлять им всем отрицательные модификаторы, лучше задать в основном стиле отсутствие подчеркивания, а модификатор создать только для выбранного языка
+   -->
+            <!--  Там сложность в том, что стиль модификатора надо подключить ПОСЛЕ decoration none, иначе подчеркивания не будет
+            а значит, нельзя его выделить в подпапку по БЕМ, импорт его загрузит до header__lang, а тот уберет подчеркивание
+                      -->
         </div>
     </header>
     <main class="content">
         <section class="lead">
             <h1 class="lead__title">Путешествия по России</h1>
-            <h3 class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь</h3>
-            <div class="lead__image"></div>
-            <div class="lead__caption">ваша полка — верхняя</div>
+            <!-- Отлично! правильно выделен заголовок страницы и обозначен тегом h1 -->
+            <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь</p>
+            <!-- ++Можно лучше: используйте для подзаголовков параграфы -->
+            <img src="images/polka.jpg" alt="вагонная полка" class="lead__image">
+            <!-- ++Надо исправить: это контентное изображение и оно должно быть в разметке тегом img -->
+            <p class="lead__caption">ваша полка — верхняя</p>
+            <!-- ++ Надо исправить: Элемент <div> здесь - не лучшее решение. div, обычно, является нашим контейнером, в котором мы располагаем данные.
+            Он может содержать другие блочные элементы, в основном мы используем такой контейнер для последующей стилизации содержимого, т.к. сам
+            по себе div не несет какого-либо смысла, а является обычным блочным элементом (Согласно старой контентной модели) или же flow-content
+            (Согласно HTML5-content model). Более подробно с контентными моделями
+            HTML5 можно ознакомиться здесь: https://www.w3.org/TR/2011/WD-html5-20110525/content-models.html .
+            Для элементов, содержащих текстовый контент используйте h1-h6/p-->
+            <!--Ладушки, сделал p Мы вроде проходили, что для текстовых блоков не стоит div, я просто забыл
+            Просто div такой абстрактный, никаких левых стилей, лепи что хочешь
+            -->
         </section>
         <section class="intro">
             <div class="intro__content">
                 <h2 class="intro__title">Чего мы там не видели?</h2>
-                <h3 class="intro__subtitle">Зачем путешестовать по своему дому</h3>
+                <p class="intro__subtitle">Зачем путешестовать по своему дому</p>
+                <!-- ++Можно лучше: используйте для подзаголовков параграфы -->
                 <div class="intro__content-row">
                     <div class="intro__text">
                         По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести
@@ -70,14 +103,17 @@
             <img src="images/kamchatka-2.jpg" alt="вершина горы на Камчатке" class="photo-grid__item">
             <img src="images/baikal-2.jpg" alt="гористый берег байкала" class="photo-grid__item">
             <img src="images/ergaki.jpg" alt="горы в Ергаках" class="photo-grid__item">
+            <!-- Отлично! правильно оформлен блок с изображениями! у изображений есть src, alt и класс -->
         </section>
         <section class="places">
             <div class="places__item">
                 <h2 class="places__title">Куршская коса</h2>
                 <div class="places__website">
                     <p class="places__url-heading">url</p>
-                    <a href="http://park-kosa.ru/" class="places__url transition__fade">park-kosa.ru</a>
+                    <a href="http://park-kosa.ru/" target="_blank" class="places__url transition-fade">park-kosa.ru</a>
                 </div>
+                <!-- ++ Можно лучше: для внешних ссылок можно добавить атрибут target="_blank" -->
+                <!-- забыл)-->
                 <img class="places__image" src="images/kosa.jpg" alt="фотография косы">
                 <div class="places__text">
                     <p class="places__paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных
@@ -96,8 +132,8 @@
                 <h2 class="places__title">Кольский</h2>
                 <div class="places__website">
                     <p class="places__url-heading">url</p>
-                    <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="places__url transition__fade">National
-                        Geographic</a>
+                    <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
+                       class="places__url transition-fade" target="_blank">National Geographic</a>
                 </div>
                 <img class="places__image" src="images/kolsky.jpg" alt="фото кольской тундры">
                 <div class="places__text">
@@ -118,7 +154,7 @@
                 <h2 class="places__title">Алтай</h2>
                 <div class="places__website">
                     <p class="places__url-heading">url</p>
-                    <a href="https://www.facebook.com/altairegion22/" class="places__url transition__fade">Facebook</a>
+                    <a href="https://www.facebook.com/altairegion22/" class="places__url transition-fade" target="_blank">Facebook</a>
                 </div>
                 <img class="places__image" src="images/altai.jpg" alt="фотография алтайского леса">
                 <div class="places__text">
@@ -138,7 +174,8 @@
                 <h2 class="places__title">Зимний Байкал</h2>
                 <div class="places__website">
                     <p class="places__url-heading">url</p>
-                    <a href="https://vk.com/baikalmile" class="places__url transition__fade">https://vk.com/baikalmile</a>
+                    <a href="https://vk.com/baikalmile"
+                       class="places__url transition-fade" target="_blank">https://vk.com/baikalmile</a>
                 </div>
                 <img class="places__image" src="images/winter-baikal.jpg" alt="фотография байкальского льда">
                 <div class="places__text">
@@ -158,7 +195,7 @@
                 <h2 class="places__title">Карелия</h2>
                 <div class="places__website">
                     <p class="places__url-heading">url</p>
-                    <a href="https://voldozero.ru" class="places__url transition__fade">https://voldozero.ru</a>
+                    <a href="https://voldozero.ru" class="places__url transition-fade" target="_blank">https://voldozero.ru</a>
                 </div>
                 <img class="places__image" src="images/karelia.jpg" alt="фотография озера в карелии">
                 <div class="places__text">
@@ -175,13 +212,30 @@
         </section>
         <section class="video">
             <h2 class="video__content-title">В глубины Земли и в дальний космос</h2>
-            <h3 class="video__content-subtitle">Видео от студии Stereotactic о местах в России, где ведутся
-                фундаментальные исследования</h3>
+            <p class="video__content-subtitle">Видео от студии Stereotactic о местах в России, где ведутся
+                фундаментальные исследования</p>
+            <!-- ++Можно лучше: используйте для подзаголовков параграфы -->
             <div class="video__container">
                 <a class="video__link video__link_kamchatcka" target="_blank" href="https://vimeo.com/81106671">
-                    <img src="images/icon_play.svg" alt="кнопка проигрывания видео" class="video__icon_play">
+                    <!-- Отлично! Фоновое изображение вставлено с помощью css и модификатора -->
+                    <img src="images/icon_play.svg" alt="кнопка проигрывания видео" class="video__icon video__icon_play">
+                    <!--Надо исправить: БЭМ сущность содержит в себе только модификатор.
+                    Класс представлен одним модификатором, образованным от элемента.
+                    Пример работы с модификаторами: class='block block_mod block_mod_mod-value',
+                    где block - блок или элемент (block__element-name_mod). _mod - модификатор блока _mod_mod-value
+                    - сложный модификатор, где _mod-value - значение сложного модификатора.
+                    Сейчас нету блока от которого можно было бы использовать модификатор.
+                    Документацию по БЭМ: https://tech.yandex.ru/bem/-->
+                    <!-- ничего не понял
+                    video блок
+                    icon элемент
+                    play modificator
+                    итого будет video__icon_play
+                    как это надо переделать? -->
                     <div class="video__text">
                         <div class="video__item-bg"></div>
+                        <!-- Можно лучше: задайте затемнение с помощью псевдоэлемента css -->
+                        <!-- я знаю этот способ, но мне он не нравится, костыли какие-то Разве :after для этого? -->
                         <p class="video__duration">6:30</p>
                         <h3 class="video__title">Colors<br>of Kamchatka</h3>
                         <p class="video__subtitle">Director: Pavel Karykhalin</p>
@@ -204,11 +258,13 @@
             <div class="additional__container">
                 <div class="additional__item">
                     <div class="additional__content">
+                        <!-- Надо исправить: Этот элемент - лишняя обертка. Ее можно удалить без вреда для верстки. Старайтесь избегать лишних элементов в разметке. -->
                         <h3 class="additional__title">Новороссийская бухта</h3>
                         <p class="additional__text">Главный торговый порт не курорт, но море здесь лазурное, и толпы
                             кораблей на рейде. Залюбуешься.</p>
                     </div>
                     <img src="images/nvrssk.jpg" alt="Новороссийск" class="additional__img-bg">
+                    <!-- Можно лучше: задайте фоновое изображение с помощью модификатора у родительского блока и background-image css -->
                 </div>
                 <div class="additional__item">
                     <div class="additional__content">
@@ -278,8 +334,11 @@
         </section>
         <section class="cover">
             <div class="cover__overlay"></div>
-            <a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover__link transition__fade" target="_blank">
+            <!-- Можно лучше: задайте затемнение с помощью псевдоэлемента css -->
+            <a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover__link transition-fade"
+               target="_blank">
                 <img class="cover__image" src="images/cover.jpg" alt="фото вокзала">
+                <!-- Можно лучше: задайте фоновое изображение с помощью модификатора у родительского блока и background-image css -->
                 <h2 class="cover__title">До Байкала &laquo;на собаках&raquo;</h2>
                 <p class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes — путешествие от столицы до
                     Байкала на электричках.</p>
@@ -292,6 +351,7 @@
                     <img src="images/novgorod.png" alt="Герб Великого Новгорода" class="emblem__image">
                     <figcaption class="emblem__city">Великий Новгород</figcaption>
                 </figure>
+                <!-- Отлично! Вы используете в работе семантический тег figure -->
                 <figure class="emblem__item">
                     <img src="images/rostov.png" alt="Герб Ростова" class="emblem__image">
                     <figcaption class="emblem__city">Ростов Великий</figcaption>
@@ -313,6 +373,8 @@
         <section class="barentsburg">
             <h2 class="barentsburg__title">Баренцбург</h2>
             <h3 class="barentsburg__coord">78.0648&deg; с.ш. 14.2335&deg; в.д.</h3>
+            <!-- Можно лучше: используйте для подзаголовков параграфы -->
+
             <img src="images/map.jpg" alt="карта Баренцбурга" class="barentsburg__map">
             <div class="barentsburg__text-block">
                 <p class="barentsburg__text">Арктика и соседство с Норвегией — мало кто знает о жизни самого западного
@@ -320,7 +382,7 @@
                 <div class="barentsburg__website">
                     <p class="barentsburg__url-heading">url</p>
                     <a href="https://meduza.io/feature/2016/03/02/umeret-ili-roditsya-zdes-prakticheski-nevozmozhno"
-                       class="barentsburg__url transition__fade">Умереть или родиться здесь практически невозможно</a>
+                       class="barentsburg__url transition-fade">Умереть или родиться здесь практически невозможно</a>
                 </div>
             </div>
         </section>
@@ -328,14 +390,80 @@
     <footer class="footer">
         <div class="footer__navigation-block">
             <a href="https://yandex.ru/maps/213/moscow/?ll=37.622504%2C55.753215&z=10" target="_blank"
-               class="footer__link transition__fade">Карты</a>
-            <a href="https://yandex.ru/pogoda/moscow" target="_blank" class="footer__link transition__fade">Погода</a>
-            <a href="https://rasp.yandex.ru/" target="_blank" class="footer__link transition__fade">Расписание</a>
-            <a href="https://calendar.yandex.ru/week?uid=497434302" target="_blank" class="footer__link transition__fade">Календарь</a>
-            <a href="https://travel.yandex.ru/" target="_blank" class="footer__link transition__fade">Путешествия</a>
+               class="footer__link transition-fade">Карты</a>
+            <a href="https://yandex.ru/pogoda/moscow" target="_blank" class="footer__link transition-fade">Погода</a>
+            <a href="https://rasp.yandex.ru/" target="_blank" class="footer__link transition-fade">Расписание</a>
+            <a href="https://calendar.yandex.ru/week?uid=497434302" target="_blank"
+               class="footer__link transition-fade">Календарь</a>
+            <a href="https://travel.yandex.ru/" target="_blank" class="footer__link transition-fade">Путешествия</a>
         </div>
+        <!-- Надо исправить: по смыслу эти ссылки - навигация. Оберните их в список <nav>. используйте список nav > ul > li > a -->
+
         <p class="footer__copyright">&copy; 2019 Антон</p>
+        <!-- Отлично! Для копирайта вы используете html мнемоники -->
     </footer>
 </div>
 </body>
 </html>
+
+
+<!-- В целом по работе: 
+
+        Отлично! Понравилось в работе:
+
+        понятный, хорошо структурированный код
+        страница проходит валидацию 
+        для всех изображений прописан alt
+        стили и картинки в самостоятельных папках
+        для логотипа и иконок использован вектроный формат изображений
+        контент центрируется на большом экране
+        для интерактивных элементов используется transition
+
+
+    Нужно исправить:
+
+    - Комментарии в разметке
+
+    - transition__fade это элемент. 
+    переименуйте этот класс в блок, чтобы переиспользовать его
+
+    - для cover реализуйте затемнение изображения на фоне при наведении.
+
+    - Для страницы используется font-family: 'Inter', это является не совсем корректным решением. В том случае, если по какой-либо причине, например, шрифты не загрузятся или будет использоваться браузер, не поддерживающий современные расширения формата, следует предусмотреть такой исход и один или несколько из системных шрифтов. Используйте font-family: 'Inter', Arial, sans-serif; Желательно задать каждому блоку font-family
+    
+    - Поправьте отступы в текстах .intro, .comments, .place, отступ между .barentsburg__title и .barentsburg__coord
+    Вы установили высоту строки у заголовка и координат как в макете и задали отступ тоже как в макете, проблема в том что все эти программы (Figma/Avocode/Zeplin) не учитывают высоту строки т.е. они показывают отступ от символа до символа, а браузер отступ делает от высоты строки до высоты строки. Т.е. это не бриф в котором указаны размеры, они могут css быть другие, включая pixel perfect можно подогнать
+
+    - Важно исправить: В вашей работе Вы используете фиксированную высоту элементов (секции, внутренние элементы и целые блоки) - это очень плохая практика. В реальной жизни никто не верстает статичные сайты, и Вы скорее всего не будете знать, какой контент будет у сайта. Воспринимайте макет как пример того, что может быть. И поэтому, если Вы зафиксируете высоту элементов, а в нем окажется больше контента, или меньше, то Ваша верстка сломается, страница будет выглядеть плохо, и придется переделывать. В большинстве случаев высоту блоков фиксировать не нужно, и она должна определяться контентом. А чтобы точно попадать в макет, нужно уделять внимание вертикальным отступам и параметрам текста: размерам шрифта, высоте строк и пр. Иногда можно и нужно указывать точное значение высоты, но только тогда, когда вы точно на 100% уверены, какое содержание будет в блоке, или когда без этого не обойтись например, какие-то декоративные элементы, или как у прошлой работе, в блоке feinman, где нужно было сделать большой блок с картинкой в фоне. Вам нужно пересмотреть стили Ваших блоков и убрать отовсюду фиксированные значения height.
+   
+    - .intro__text-caption располагается не как в макете
+
+    - .emblem ширина не соответствует макету
+
+
+
+    Можно улучшить:
+
+   
+    - Комментарии в разметке
+
+    - В работе присутствует большое количество контентных элементов со свойством width; Такой подход при портировании проекта под разные экраны и устройства приводит к частому изменению свойства width, что добавляет лишний код и в целом негативно влияет на отображение проекта на некоторых разрешениях. Свойство width для текстовых элементов замените, например, на max-width;
+    
+    - Распределите стилевые файлы в соответствии с файловой структурой БЭМ https://ru.bem.info/methodology/filestructure/
+
+    - отступы у блоков перенесите в дополнительный класс (либо модификатор к этому же блоку, либо класс элемента от родительского блока.)
+    БЭМ блоки могут переиспользоваться, и отступы на новом месте могут отличаться. Чтобы не было путаницы, не задавайте отступы непосредственно в класс блока.
+
+    - Задайте font-family для каждого блока
+
+
+Пожалуйста, не удаляйте комментарии.
+Исправленные комментарии помечайте +
+
+Для получения зачета исправьте комментарии "Надо исправить"
+
+
+Полезные материалы:
+- Соглашение по именованию БЭМ https://ru.bem.info/methodology/naming-convention/
+- Часто используемые слова в классах https://github.com/yoksel/common-words
+-->
