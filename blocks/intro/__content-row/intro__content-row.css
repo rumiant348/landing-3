@@ -1,4 +1,6 @@
 .intro__content-row {
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }

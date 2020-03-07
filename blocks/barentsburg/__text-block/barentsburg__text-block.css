@@ -3,4 +3,5 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: start;
+    padding-top: 25px;
 }

@@ -1,9 +1,12 @@
 .places__paragraph {
-    font-family: Inter;
+    font-family: Inter, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
 
     color: #FFFFFF;
+
+    margin: 0;
+    padding-bottom: 30px;
 }

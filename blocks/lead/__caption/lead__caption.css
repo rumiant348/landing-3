@@ -1,9 +1,9 @@
 .lead__caption {
     width: 638px;
-    height: 10px;
+    max-height: 10px;
     margin: 10px 0 0;
 
-    font-family: Inter;
+    font-family: Inter, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;

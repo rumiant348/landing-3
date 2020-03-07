@@ -1,12 +1,12 @@
 @import "__link/footer__link.css";
 @import "__copyright/footer__copyright.css";
 @import "__navigation-block/footer__navigation-block.css";
+@import "__links-list/footer__links-list.css";
 
 .footer {
-    width: 1184px;
+    max-width: 1184px;
     margin: 0 auto 48px;
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
