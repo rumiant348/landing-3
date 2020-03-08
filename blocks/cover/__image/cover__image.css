@@ -1,6 +1,6 @@
 .cover__image {
-    width: 1184px;
-    height: 594px;
+    max-width: 1184px;
+    width: 100%;
     position: absolute;
     top: -280px;
     left: 0;

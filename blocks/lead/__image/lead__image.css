@@ -2,6 +2,6 @@
     background-image: url("../../../images/polka.jpg");
     background-size: cover;
     margin: 78px auto 0;
-    width: 985px;
-    height: 555px;
+    max-width: 985px;
+    width: 100%;
 }
