@@ -1,11 +1,8 @@
 @import "__title/intro__title.css";
-@import "__subtitle/intro__subtitle.css";
 @import "__content-row/intro__content-row.css";
 @import "__text/intro__text.css";
-@import "__text-line/intro__text-line.css";
 @import "__text-bold/intro__text-bold.css";
 @import "__content/intro__content.css";
-@import "__text-caption/intro__text-caption.css";
 @import "__statistics/intro__statistics.css";
 @import "__statistics-line/intro__statistics-line.css";
 
@@ -16,4 +13,16 @@
     align-content: flex-start;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1100px) {
+    .intro {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        margin: 64px auto 0;
+    }
 }

@@ -5,9 +5,9 @@
     font-size: 18px;
     line-height: 26px;
     text-align: center;
-    margin: 134px auto 48px;
     color: #FFFFFF;
     max-width: 382px;
     z-index: 2;
     position: relative;
+    margin: 0 auto;
 }

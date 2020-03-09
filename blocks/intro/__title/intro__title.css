@@ -2,7 +2,16 @@
     color: #FFFFFF;
     font-family: Inter, Arial, sans-serif;
     font-weight: 900;
-    font-size: 54px;
-    line-height: 59px;
+    font-size: 3.375rem;
+    line-height: 1.1;
     margin: 0;
+    padding-bottom: 48px;
+}
+
+@media screen and (max-width: 700px) {
+    .intro__title {
+        font-size: 2rem;
+        line-height: 1.1;
+        padding-bottom: 32px;
+    }
 }

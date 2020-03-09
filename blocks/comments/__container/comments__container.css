@@ -1,5 +1,11 @@
 .comments__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-evenly;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(382px, 1fr));
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1vh;
+    grid-row-gap: 1vh;
 }

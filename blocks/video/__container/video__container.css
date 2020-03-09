@@ -1,6 +1,14 @@
 .video__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(583px, 1fr));
+
     flex-direction: row;
     justify-content: space-around;
     max-width: 1184px;
+    justify-items: center;
+    align-items: center;
+
+    grid-gap: 1vh;
+    grid-row-gap: 1vh;
 }
+

@@ -9,9 +9,11 @@
     justify-content: space-between;
     align-content: end;
     z-index: 0;
+    /*max-width: 100%;*/
     width: 583px;
     background-size: cover;
     border-radius: 10px;
+    /*margin: 8px auto;*/
 }
 
 .video__link:hover .video__item-bg {

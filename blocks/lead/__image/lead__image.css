@@ -5,3 +5,9 @@
     max-width: 985px;
     width: 100%;
 }
+
+@media screen and (max-width: 700px) {
+    .lead__image {
+        margin: 32px auto 0;
+    }
+}
