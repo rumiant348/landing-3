@@ -3,7 +3,7 @@
     max-width: 460px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1055px) {
     .places__website {
         display: none;
     }
