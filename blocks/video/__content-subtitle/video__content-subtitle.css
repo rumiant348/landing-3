@@ -2,10 +2,26 @@
     font-family: Inter, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 1.5rem;
+    line-height: 2.1875rem;
     text-align: center;
     max-width: 640px;
-    margin: 34px auto 72px;
+    margin: 0 auto;
     color: #FFFFFF;
+    padding-bottom: 72px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+    .video__content-subtitle {
+        padding-bottom: 56px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .video__content-subtitle {
+        font-size: 1rem;
+        line-height: 1.4375rem;
+        padding-bottom: 24px;
+    }
 }
