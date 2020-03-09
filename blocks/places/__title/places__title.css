@@ -7,7 +7,7 @@
 
     color: #FFFFFF;
 
-    padding-top: 80px;
+    padding-top: 48px;
     margin: 0;
-    align-self: flex-end;
+    max-width: 460px;
 }

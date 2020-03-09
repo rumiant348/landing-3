@@ -1,3 +1,4 @@
 .places__website {
     align-self: flex-end;
+    max-width: 460px;
 }
