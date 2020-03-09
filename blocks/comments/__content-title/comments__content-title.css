@@ -2,11 +2,29 @@
     font-family: Inter, Arial, sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 72px;
-    line-height: 65px;
+    font-size: 4.5rem;
+    line-height: 4.0625rem;
     text-align: center;
 
     color: #FFFFFF;
     max-width: 800px;
     margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+    .comments__content-title {
+        font-size: 2.625rem;
+        line-height: 2.875rem;
+        padding-bottom: 24px;
+
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .comments__content-title {
+        font-size: 2rem;
+        line-height: 2.1875rem;
+        padding-bottom: 42px;
+    }
 }

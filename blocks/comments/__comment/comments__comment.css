@@ -1,3 +1,9 @@
 .comments__comment {
     max-width: 382px;
 }
+
+@media screen and (max-width: 1025px) {
+    .comments__comment {
+        text-align: center;
+    }
+}
