@@ -1,42 +1,28 @@
-@import "__image/cover__image.css";
 @import "__title/cover__title.css";
 @import "__subtitle/cover__subtitle.css";
-@import "__overlay/cover__overlay.css";
 @import "__link/cover__link.css";
 
 .cover {
     max-width: 1184px;
-    margin: 102px auto 0;
+    margin: 102px auto 160px;
     position: relative;
     background-image: url("../../images/cover.jpg");
     background-size: cover;
-    /*width: 100%;*/
-    /*height: 100%;*/
-    padding-bottom: 20%;
 }
 
-/*.cover__image {*/
-/*    max-width: 1184px;*/
-/*    width: 100%;*/
-/*    position: relative;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    z-index: 0;*/
-/*}*/
-
-.cover:after {
+.cover::after {
     content: "";
     display: block;
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     background-color: black;
     position: absolute;
     top: 0;
     left: 0;
     opacity: .3;
-    transition: opacity .3s ease-in .1s;
+    transition: opacity 1s ease-in .1s;
 }
 
-.cover:hover:after {
-    opacity: .5
+.cover:hover::after {
+    opacity: .8;
 }
