@@ -2,11 +2,24 @@
     font-family: Inter, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
 
     color: #FFFFFF;
 
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 36px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .places__paragraph {
+        padding-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .places__paragraph {
+        font-size: 1rem;
+        line-height: 1.6875rem;
+    }
 }

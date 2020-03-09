@@ -2,3 +2,9 @@
     align-self: flex-end;
     max-width: 460px;
 }
+
+@media screen and (max-width: 767px) {
+    .places__website {
+        display: none;
+    }
+}
