@@ -2,14 +2,28 @@
     font-family: Inter, Arial, sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 72px;
-    line-height: 78px;
+    font-size: 4.5rem;
+    line-height: 4.875rem;
     text-align: center;
 
     color: #FFFDFD;
     position: relative;
     z-index: 2;
+    margin: 0 auto;
 
     padding-top: 23%;
     padding-bottom: 5%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .cover__title {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cover__title {
+        font-size: 2rem;
+        line-height: 2.1875rem;
+    }
 }

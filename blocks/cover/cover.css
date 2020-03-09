@@ -4,7 +4,7 @@
 
 .cover {
     max-width: 1184px;
-    margin: 102px auto 142px;
+    margin: 102px auto 60px;
     position: relative;
     background-image: url("../../images/cover.jpg");
     background-size: cover;

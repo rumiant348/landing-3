@@ -8,3 +8,9 @@
     padding-top: 10px;
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 767px) {
+    .footer__copyright {
+        align-self: center;
+    }
+}

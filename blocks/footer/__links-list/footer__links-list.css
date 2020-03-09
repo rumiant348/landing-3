@@ -4,5 +4,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;
+    padding: 0 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .footer__links-list {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
