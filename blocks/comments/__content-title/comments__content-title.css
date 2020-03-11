@@ -2,14 +2,15 @@
     font-family: Inter, Arial, sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 4.5rem;
-    line-height: 4.0625rem;
+    font-size: 72px;
+    line-height: 78px;
+
     text-align: center;
 
     color: #FFFFFF;
     max-width: 800px;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 @media screen and (min-width: 400px) and (max-width: 767px) {

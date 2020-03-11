@@ -2,8 +2,8 @@
     font-family: Inter, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.125rem;
-    line-height: 1.875rem;
+    font-size: 18px;
+    line-height: 28px;
 
     color: #FFFFFF;
 
@@ -11,7 +11,7 @@
     padding-bottom: 36px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 900px) {
     .places__paragraph {
         padding-bottom: 24px;
     }

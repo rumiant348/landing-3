@@ -1,22 +1,22 @@
 @import "__item/photo-grid__item.css";
 
 .photo-grid {
-    margin: 92px auto 0;
+    margin: 97px auto 0;
     max-width: 1184px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: 1vh;
-    grid-row-gap: 1vh;
+    grid-gap: 17px;
+    grid-row-gap: 17px;
 }
 
 
-@media screen and (min-width: 1025px) and (max-width: 1400px) {
+@media screen and (min-width: 900px) and (max-width: 1400px) {
     .photo-grid {
         padding: 0 48px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 900px) {
     .photo-grid {
         padding: 0 24px;
     }

@@ -2,7 +2,7 @@
     max-width: 382px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 900px) {
     .comments__comment {
         text-align: center;
     }

@@ -1,9 +1,10 @@
 .places__website {
     align-self: flex-end;
     max-width: 460px;
+    grid-area: website;
 }
 
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 900px) {
     .places__website {
         display: none;
     }

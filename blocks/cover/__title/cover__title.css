@@ -11,11 +11,11 @@
     z-index: 2;
     margin: 0 auto;
 
-    padding-top: 23%;
-    padding-bottom: 5%;
+    padding-top: 274px;
+    padding-bottom: 118px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 900px) {
     .cover__title {
         max-width: 600px;
     }

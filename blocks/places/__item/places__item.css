@@ -1,6 +1,14 @@
 .places__item {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-column-gap: 40px;
-    grid-row-gap: 60px;
+    /*grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));*/
+    grid-template-areas:
+            "title website"
+            "image text";
+    /*grid-template-rows: 1fr 1fr;*/
+    grid-template-columns: 1fr 1fr;
+
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 3.40rem;
+
+    padding-bottom: 33px;
 }

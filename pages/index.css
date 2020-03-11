@@ -1,3 +1,5 @@
+@import "../blocks/fonts/fonts.css";
+@import "../blocks/page/page.css";
 @import "../blocks/transition-fade/transition-fade.css";
 @import "../blocks/header/header.css";
 @import "../blocks/content/content.css";
@@ -10,34 +12,3 @@
 @import "../blocks/comments/comments.css";
 @import "../blocks/cover/cover.css";
 @import "../blocks/footer/footer.css";
-
-
-@font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/Inter/Inter-Regular.woff2") format("woff2"),
-    url("../fonts/Inter/Inter-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 900;
-    src: url("../fonts/Inter/Inter-Black.woff2") format("woff2"),
-    url("../fonts/Inter/Inter-Black.woff") format("woff");
-}
-
-
-.page {
-    margin: 0 auto;
-    background-color: #2A2C2F;
-    background-size: 100%;
-    /*max-width: 1184px;*/
-    max-width: 100%;
-    /*width: 100%;*/
-
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-}
