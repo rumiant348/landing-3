@@ -2,3 +2,9 @@
     max-width: 460px;
     grid-area: image;
 }
+
+@media screen and (max-width: 1100px) {
+    .places__image {
+        max-width: 440px;
+    }
+}
