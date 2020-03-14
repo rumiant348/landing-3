@@ -21,8 +21,13 @@
 
 @media screen and (max-width: 767px) {
     .header__lang {
-        /*height: 18px;*/
         font-size: 1.125rem;
         line-height: 1.125;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header__lang:nth-child(2) {
+        margin-left: 18px;
     }
 }

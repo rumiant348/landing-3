@@ -30,3 +30,9 @@
         padding-left: 15px;
     }
 }
+
+@media screen and (max-width: 350px){
+    .lead__subtitle {
+        padding-left: 0;
+    }
+}

@@ -23,3 +23,9 @@
         margin: 64px auto 0;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .comments {
+        margin: 60px auto 0;
+    }
+}

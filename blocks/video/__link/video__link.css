@@ -29,6 +29,15 @@
 @media screen and (max-width: 900px) {
     .video__link {
         max-width: 355px;
-        height: 200px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .video__link {
+        max-width: 290px;
+        max-height: 177px;
+        padding-bottom: 10px;
+        margin-bottom: 8px;
     }
 }

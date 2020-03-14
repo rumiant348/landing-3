@@ -5,3 +5,9 @@
     justify-content: end;
     padding-top: 20px;
 }
+
+@media screen and (max-width: 350px) {
+    .header__lang-container {
+        padding-top: 17px;
+    }
+}

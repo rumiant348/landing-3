@@ -36,3 +36,12 @@
         max-width: 400px;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .video__content-title {
+        font-size: 32px;
+        line-height: 35px;
+        padding-bottom: 21px;
+        max-width: 300px;
+    }
+}

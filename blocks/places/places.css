@@ -37,3 +37,9 @@
         margin: 70px auto 0;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .places {
+        margin: 65px auto 0;
+    }
+}

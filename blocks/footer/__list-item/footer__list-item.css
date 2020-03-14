@@ -1,6 +1,12 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .footer__list-item {
         padding-bottom: 14px;
     }
 }
 
+@media screen and (max-width: 350px) {
+    .footer__list-item {
+        padding-bottom: 13px;
+        padding-left: 4px;
+    }
+}

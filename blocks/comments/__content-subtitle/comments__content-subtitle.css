@@ -20,3 +20,9 @@
         max-width: 400px;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .comments__content-subtitle {
+        max-width: 262px;
+    }
+}

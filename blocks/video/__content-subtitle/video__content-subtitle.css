@@ -28,3 +28,8 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .video__content-subtitle {
+        max-width: 300px;
+    }
+}
