@@ -22,3 +22,9 @@
         padding-top: 18px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .video {
+        padding-top: 0px;
+    }
+}
