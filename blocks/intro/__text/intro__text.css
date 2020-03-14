@@ -8,6 +8,13 @@
     padding-bottom: 17px;
 }
 
+@media screen and (max-width: 900px) {
+    .intro__text {
+        max-width: 710px;
+        padding-bottom: 30px;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .intro__text {
         font-size: 1rem;

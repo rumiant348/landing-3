@@ -11,3 +11,9 @@
     max-width: 1184px;
     margin: 112px auto 0;
 }
+
+@media screen and (max-width: 900px) {
+    .comments {
+        margin: 73px auto 0;
+    }
+}

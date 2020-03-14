@@ -14,3 +14,10 @@
 
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 900px) {
+    .lead__caption {
+        padding-top: 12px;
+        padding-left: 24px;
+    }
+}

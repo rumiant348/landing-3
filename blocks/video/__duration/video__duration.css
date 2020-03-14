@@ -11,3 +11,9 @@
 
     margin-left: 30px;
 }
+
+@media screen and (max-width: 900px){
+    .video__duration {
+        margin-left: 24px;
+    }
+}

@@ -26,3 +26,10 @@
 .cover:hover::after {
     opacity: .8;
 }
+
+@media screen and (max-width: 900px){
+    .cover {
+        margin: 50px auto 60px;
+    }
+}
+

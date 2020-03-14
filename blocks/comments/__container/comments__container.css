@@ -9,3 +9,9 @@
         width: 95%;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .comments__container {
+        flex-direction: column;
+    }
+}

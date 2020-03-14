@@ -12,3 +12,10 @@
         padding-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 900px){
+    .video__icon-play {
+        padding-bottom: 0;
+        margin: 24px 24px 0;
+    }
+}
