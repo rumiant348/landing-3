@@ -26,3 +26,12 @@
         max-width: 47%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .cover__subtitle {
+        max-width: 72%;
+        font-size: 14px;
+        line-height: 17px;
+        padding-bottom: 30px;
+    }
+}

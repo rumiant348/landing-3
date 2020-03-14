@@ -23,8 +23,9 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
     .footer__copyright {
-        align-self: center;
+        align-self: flex-start;
+        padding-top: 21px;
     }
 }

@@ -8,9 +8,9 @@
     margin: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
     .footer__links-list {
-        align-items: center;
+        align-items: flex-start;
         display: flex;
         flex-direction: column;
     }

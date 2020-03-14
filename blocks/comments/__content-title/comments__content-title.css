@@ -29,10 +29,9 @@
     }
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 600px) {
     .comments__content-title {
-        font-size: 2rem;
-        line-height: 2.1875rem;
-        padding-bottom: 42px;
+        font-size: 32px;
+        line-height: 35px;
     }
 }

@@ -2,6 +2,8 @@
 @import "__copyright/footer__copyright.css";
 @import "__navigation-block/footer__navigation-block.css";
 @import "__links-list/footer__links-list.css";
+@import "__list-item/footer__list-item.css";
+
 
 .footer {
     max-width: 1184px;
@@ -29,8 +31,9 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
     .footer {
+        padding-top: 0;
         flex-direction: column;
     }
 }

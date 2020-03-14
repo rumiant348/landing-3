@@ -33,3 +33,9 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .cover {
+        margin: 0 auto 60px;
+    }
+}
+

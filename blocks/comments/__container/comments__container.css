@@ -15,3 +15,9 @@
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .comments__container {
+        width: 92%;
+    }
+}

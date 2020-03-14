@@ -23,8 +23,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    .header {
-        font-size: 2rem;
-        line-height: 2.1875rem;
+    .places__title {
+        font-size: 32px;
+        line-height: 35px;
+        padding: 0 16px 14px;
     }
 }

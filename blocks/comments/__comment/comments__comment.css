@@ -24,6 +24,7 @@
 
 @media screen and (max-width: 600px) {
     .comments__comment {
-        text-align: center;
+        text-align: left;
+        padding-left: 17px;
     }
 }

@@ -19,17 +19,12 @@
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 767px) {
+@media screen and (max-width: 600px) {
     .video__content-subtitle {
-        padding-bottom: 56px;
+        font-size: 16px;
+        line-height: 23px;
+        padding-bottom: 26px;
         max-width: 400px;
     }
 }
 
-@media screen and (max-width: 399px) {
-    .video__content-subtitle {
-        font-size: 1rem;
-        line-height: 1.4375rem;
-        padding-bottom: 24px;
-    }
-}

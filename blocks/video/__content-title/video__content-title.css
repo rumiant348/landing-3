@@ -28,19 +28,11 @@
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 767px) {
+@media screen and (max-width: 600px) {
     .video__content-title {
-        font-size: 2.625rem;
-        line-height: 2.875rem;
-        padding-bottom: 24px;
+        font-size: 32px;
+        line-height: 35px;
+        padding-bottom: 21px;
         max-width: 400px;
-    }
-}
-
-@media screen and (max-width: 399px) {
-    .video__content-title {
-        font-size: 2rem;
-        line-height: 2.1875rem;
-        padding-bottom: 16px;
     }
 }

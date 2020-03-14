@@ -9,3 +9,10 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .places__text {
+        margin-top: 0;
+        padding: 0 16px;
+    }
+}
+

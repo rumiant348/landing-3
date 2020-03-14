@@ -6,3 +6,10 @@
     line-height: 20px;
     margin-left: 0;
 }
+
+@media screen and (max-width: 600px) {
+    .intro__statistics {
+        font-size: 12px;
+        line-height: 19px;
+    }
+}
