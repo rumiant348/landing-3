@@ -4,7 +4,6 @@
     background-size: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    overflow: hidden;
     align-content: center;
     display: flex;
     flex-direction: column;
