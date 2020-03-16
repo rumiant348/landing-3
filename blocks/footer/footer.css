@@ -37,3 +37,11 @@
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .footer {
+        padding-top: 8px;
+        width: 100%;
+    }
+}
+

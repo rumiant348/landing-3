@@ -13,9 +13,10 @@
 
 @media screen and (max-width: 900px) {
     .video__content-subtitle {
+        width: 87%;
         font-size: 24px;
         line-height: 35px;
-        padding-bottom: 47px;
+        padding-bottom: 42px;
     }
 }
 
@@ -28,8 +29,8 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .video__content-subtitle {
-        max-width: 300px;
+        max-width: 330px;
     }
 }

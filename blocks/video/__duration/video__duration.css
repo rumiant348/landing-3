@@ -14,13 +14,13 @@
 
 @media screen and (max-width: 900px) {
     .video__duration {
-        margin-left: 24px;
+        margin: 0 24px;
     }
 }
 
 @media screen and (max-width: 350px) {
     .video__duration {
-        margin-left: 18px;
+        margin: 0 18px;
     }
 }
 

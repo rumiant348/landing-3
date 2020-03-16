@@ -3,26 +3,24 @@
     width: 41px;
     height: 41px;
     margin: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 54px;
     opacity: 1;
 }
 
 @media screen and (max-width: 1100px){
     .video__icon-play {
-        padding-bottom: 20px;
+        padding-bottom: 0;
     }
 }
 
 @media screen and (max-width: 900px){
     .video__icon-play {
-        padding-bottom: 0;
-        margin: 24px 24px 0;
+        margin: 20px 26px 0;
     }
 }
 
 @media screen and (max-width: 350px){
     .video__icon-play {
-        padding-bottom: 0;
         margin: 12px 18px 8px;
     }
 }

@@ -4,6 +4,7 @@
     margin: 69px auto 0;
     max-width: 985px;
     width: 100%;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1200px) {
